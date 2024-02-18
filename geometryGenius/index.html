@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="m-10">
+        <div class="navbar bg-sky-100 rounded-lg p-5">
+            <div class="navbar-start">
+              <div class="text flex flex-col">
+                <a class="text-3xl text-black font-semibold">Interactive</a>
+                <p class="text-black">Geometry Genius</p>
+              </div>
+            </div>
+            <div class="navbar-end">
+              <a class="btn text-white bg-sky-400 border-0 px-8">Blog</a>
+            </div>
+          </div>
+    </header>
+    <main class="flex gap-5 m-10">
+        <section class="grid grid-cols-3 gap-5">
+            <div class="card shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center text-black">
+                  <h2 class="card-title">Triangle</h2>
+                  <p>Area (A) = 0.5 b X h</p>
+                  <div class="input-box flex justify-around w-full">
+                    <div class="box1 flex">
+                        <input class="bg-white border border-black mx-2 w-[70px]" type="text" id="input1">
+                        <p>cm</p>
+                    </div>
+                    <div class="box2 flex">
+                        <input class="bg-white border border-black mx-2 w-[70px]" type="text" id="input2">
+                        <p>cm</p>
+                    </div>
+                  </div>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-primary w-full bg-sky-400 text-white border-0" id="triangleCalculate">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/rectangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center text-black">
+                  <h2 class="card-title">Rectangle</h2>
+                  <p>Area (A) = 0.5 b X h</p>
+                  <div class="input-box flex justify-around w-full">
+                    <div class="box1 flex">
+                        <input class="bg-white border border-black mx-2 w-[70px]" type="text" id="input3">
+                        <p>cm</p>
+                    </div>
+                    <div class="box2 flex">
+                        <input class="bg-white border border-black mx-2 w-[70px]" type="text" id="input4">
+                        <p>cm</p>
+                    </div>
+                  </div>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-primary w-full bg-sky-400 text-white border-0" id="rectangleCalculate">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center text-black">
+                  <h2 class="card-title">Parallelogram</h2>
+                  <p>Area (A) = b X h</p>
+                  <div class="input-box flex justify-around w-full">
+                    <div class="box1 flex">
+                        <input class="bg-white border border-black mx-2 w-[70px]" type="text" id="input5">
+                        <p>cm</p>
+                    </div>
+                    <div class="box2 flex">
+                        <input class="bg-white border border-black mx-2 w-[70px]" type="text" id="input6">
+                        <p>cm</p>
+                    </div>
+                  </div>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-primary w-full bg-sky-400 text-white border-0" id="parallelogramCalculate">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center text-black">
+                  <h2 class="card-title">Rhombus</h2>
+                  <p>Area (A) = 0.5 X d1 X d2</p>
+                  <div class="input-box flex justify-around w-full">
+                    <div class="box1 flex">
+                        <input class="bg-white border border-black mx-2 w-[70px]" type="text" id="input7">
+                        <p>cm</p>
+                    </div>
+                    <div class="box2 flex">
+                        <input class="bg-white border border-black mx-2 w-[70px]" type="text" id="input8">
+                        <p>cm</p>
+                    </div>
+                  </div>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-primary w-full bg-sky-400 text-white border-0" id="rhombusCalculate">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center text-black">
+                  <h2 class="card-title">Pentagon</h2>
+                  <p>Area (A) = 0.5 X p X b</p>
+                  <div class="input-box flex justify-around w-full">
+                    <div class="box1 flex">
+                        <input class="bg-white border border-black mx-2 w-[70px]" type="text" id="input9">
+                        <p>cm</p>
+                    </div>
+                    <div class="box2 flex">
+                        <input class="bg-white border border-black mx-2 w-[70px]" type="text" id="input10">
+                        <p>cm</p>
+                    </div>
+                  </div>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-primary w-full bg-sky-400 text-white border-0" id="pentagonCalculate">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center text-black">
+                  <h2 class="card-title">Ellipse</h2>
+                  <p>Area (A) = PI X a X b
+                </p>
+                  <div class="input-box flex justify-around w-full">
+                    <div class="box1 flex">
+                        <input class="bg-white border border-black mx-2 w-[70px]" type="text" id="input11">
+                        <p>cm</p>
+                    </div>
+                    <div class="box2 flex">
+                        <input class="bg-white border border-black mx-2 w-[70px]" type="text" id="input12">
+                        <p>cm</p>
+                    </div>
+                  </div>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-primary w-full bg-sky-400 text-white border-0" id="ellipseCalculate">Calculate</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section class="w-1/4 border border-slate-500">
+            <p class="text-black text-center">Area Calculation</p>
+            <p>Area's value is <span id="result">0</span> </p>
+        </section>
+    </main>
+    <script src="./js/default.js"></script>
+    <script src="./js/function.js"></script>
+</body>
+</html>
